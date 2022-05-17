@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-M.png';
+import Logo from './Logo'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+
 
 const Home = () => {
     // Using the State Hook to define the state of the class, add animation hover so this is why use state.
@@ -64,8 +66,11 @@ const Home = () => {
                    
                      </h1>
                      <h2>Frontend Developer / Business Analyst</h2>
-                     <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                     <Link to="/contact" className="flat-button">
+                      CONTACT ME
+                     </Link>
             </div> 
+         <Logo />
         </div>
     );
 }
