@@ -13,33 +13,32 @@ const Logo = () => {
 
 
     //apply our animation effects with gsap library
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
+ useEffect(() => {
+    gsap.registerPlugin(DrawSVGPlugin)
 
-        gsap.timeline()
-        .to(bgRef.current, {
-            duration: 1,
-            opacity: 1,
-        })
-    //chain animation on top
-    // .from(outlineLogoRef.current, {
-    //     drawSVG: 0,
-    //     duration: 20,
-    //   })
+    gsap
+      .timeline()
+      .to(bgRef.current, {
+        duration: 1,
+        opacity: 1,
+      })
+      .from(outlineLogoRef.current, {
+        drawSVG: 0,
+        duration: 10,
+      })
 
-      gsap.fromTo(
-          solidLogoRef.current,
-          {
-              opacity: 0,
-          },
-          {
-              opacity: 1,
-              delay: 4,
-              duration: 4,
-
-          }
-      )
-    },[])
+    gsap.fromTo(
+      solidLogoRef.current,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        delay: 4,
+        duration: 4,
+      }
+    )
+  }, [])
 
 
 
