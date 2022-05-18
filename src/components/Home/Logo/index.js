@@ -12,7 +12,7 @@ const Logo = () => {
     const solidLogoRef = useRef();
 
 
-    //apply our animation effects
+    //apply our animation effects with gsap library
     useEffect(() => {
         gsap.registerPlugin(DrawSVGPlugin)
 
@@ -22,10 +22,10 @@ const Logo = () => {
             opacity: 1,
         })
     //chain animation on top
-    .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 20,
-      })
+    // .from(outlineLogoRef.current, {
+    //     drawSVG: 0,
+    //     duration: 20,
+    //   })
 
       gsap.fromTo(
           solidLogoRef.current,

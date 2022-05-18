@@ -11,11 +11,12 @@
     margin: auto;
     opacity: 0;
 
+    // == Small M ==
     svg {
-        width: 100%;
+        width: 150%;
         height: auto;
         bottom:0;
-        transform: rotateZ(15deg) !important;  // so doesn't get overridden later on
+        transform: rotateZ(10deg) !important;  // so doesn't get overridden later on
     }
 
     .solid-logo {
@@ -27,7 +28,7 @@
         margin:auto;
         width: 100%;
         opacity: 0;
-        transform: rotateZ(15deg);
+        transform: rotateZ(10deg);
         z-index: 1; //solid logo to appear on top 
 
     }
