@@ -7,8 +7,13 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
-  color: #444;
-  background: #6b705c;
+  /* color: #444; */
+  
+  background: linear-gradient(to right, #283048, #859398) !important; 
+  width: 100vw;
+  height: 100vh;
+
+    /* background: #6b705c; */
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
