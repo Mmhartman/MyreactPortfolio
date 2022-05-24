@@ -52,10 +52,7 @@ const About = () => {
                     </div>
                     <div className="face6">
                         <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                    </div>
-        
-        
-        
+                    </div>     
                 </div>
 
             </div>

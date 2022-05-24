@@ -1,0 +1,84 @@
+.contact-form {
+    width: 100%;
+    margin-top: 375px;
+}
+
+    ul {
+        padding: 0;
+        margin: 0;
+        
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear:both;
+            position:relative;
+            animation: relative;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+        }
+
+        // half column Name & Subject
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float:left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        // Target input type text and email 
+        input[type='text'],
+        input[type='email'] {
+            width: 100%;
+            border: 0;
+            border-radius: 4px;
+            background: #859398;
+            height: 50px;
+            font-size:  16px;
+            color: #ffffff;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        //  MESSAGE
+        textarea {
+            width: 100%;
+            border: 0;
+            border-radius: 4px;
+            background: #859398;
+            height: 50px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 150px;
+        }
+        // SEND
+        .flat-button {
+            color: #ffe8d6;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 8px 10px;
+            border: 1px solid #ffe8d6;
+            float: left;
+            border-radius: 4px;
+            background: 0 0;
+            text-transform: uppercase;
+            float: right;
+            text-align: center;
+            margin-right: 10px;
+        }
+    }
+
+    // .map-wrap {
+    //     background: ;
+    // }
