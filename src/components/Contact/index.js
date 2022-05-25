@@ -3,6 +3,7 @@ import { Loader } from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { MapContainer, TileLayer } from 'react-leaflet';
 
 const Contact = () => {
 
@@ -19,24 +20,17 @@ const Contact = () => {
      }, [])
 
     
-    // event
-     const sendEmail = (event) => {
+    // SendEmail function
+     const sendEmail = (e) => {
         //  it will stop before submitting so call the e-prevent default method and using email.js library
-        event.preventDefault()
+        e.preventDefault()
         
-        emailjs
-            // .sendForm(
-            //     'gmail',
-            //     'template_di0p0ap', // from Emailjs account. Email Template ID
-            //     form.current,
-            //     '8eB8y-k5t3iLSjTImfFuv' // Token  Also called Service ID
-            // )
+        emailjs   
                 .sendForm(
                     'service_7slzeor', // Service ID
                     'template_di0p0ap', // template ID
                     form.current,
                     '4A1KTaLELdDqmPkMZ' // Public Key
-
                 )
             
             // Send message to the user
@@ -64,7 +58,7 @@ const Contact = () => {
                      />
                 </h1>
                 <p>
-                In omnis fuga eos odit labore ut animi magni et asperiores necessitatibus et nostrum distinctio aut distinctio accusantium. Aut deserunt eveniet eos ipsam eius sit omnis porro quo repudiandae quisquam in omnis inventore et debitis minima.
+                The prospect of new opportunities intrigues me. Let's talk, I'm glad you stopped by. Would love to hear from you!
                 </p>
                 <div className="contact-form">
                     <form ref={form} onSubmit={sendEmail}>
@@ -73,7 +67,7 @@ const Contact = () => {
                             <li className="half">
                                 <input 
                                 type="text" 
-                                name="name" 
+                                name="user_name"
                                 placeholder="Name" 
                                 required
                                 />
@@ -82,7 +76,7 @@ const Contact = () => {
                             <li className="half">
                                 <input 
                                 type="email"
-                                 name="email" 
+                                 name="user_email" 
                                  placeholder="Email" 
                                  required
                                  />
@@ -111,6 +105,21 @@ const Contact = () => {
                         </ul>
                     </form>
                 </div>
+            </div>
+            <div className="info-map">
+                Mi-Ann Hartman
+                <br />
+                California, United States
+                <br />
+                Rohnert Park,Expy W <br />
+                <span>miannmhartman@gmail.com</span>
+
+            </div>
+            {/* === MAP  */}
+            <div className="map-wrap">
+                <MapContainer center={[38.349964705017186, -122.72343481567502]} zoom={13}>
+                        <TileLayer url=""/>
+                </MapContainer>
             </div>
          </div>
          <Loader type="pacman" />

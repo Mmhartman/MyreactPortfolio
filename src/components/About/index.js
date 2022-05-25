@@ -26,7 +26,7 @@ const About = () => {
                         idx={15} //1.5 seconds delay
                     />
                 </h1>
-                <p>Mi-Ann is a certified ECBA Business Analyst, who has an understanding of best practices in business analysis. She is seeking to expand her professional and technical competencies</p>
+                <p>Mi-Ann is a certified ECBA Business Analyst, who has an understanding of best practices in business analysis. She is seeking to expand her professional and technical competencies.</p>
 
                 <p>She became more interested in programming when the pandemic hit and whilst waiting for her immigration approval status. Engaging with other programmers in the industry enabled her to develop practical knowledge of how things are accomplished. Since the world is constantly evolving, she believes she can bring a fresh perspective to every project. Coding Bootcamp was the first step in getting structured training for her, and she is now taking other online courses to supplement her programming knowledge. She is currently continuing her education with coursework in HTML, CSS3, and Javascript. This makes her open to challenges and constructive criticism. She is open-minded and dedicates all her skills and talents to developing high-quality and unique products. </p>
             
