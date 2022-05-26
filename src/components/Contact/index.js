@@ -3,7 +3,7 @@ import { Loader } from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { MapContainer, TileLayer } from 'react-leaflet';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 const Contact = () => {
 
@@ -118,7 +118,10 @@ const Contact = () => {
             {/* === MAP  */}
             <div className="map-wrap">
                 <MapContainer center={[38.349964705017186, -122.72343481567502]} zoom={13}>
-                        <TileLayer url=""/>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={[38.349964705017186, -122.72343481567502]} >
+                            <Popup>She lives there, flick her a message to come over for a cup of coffee </Popup>
+                        </Marker>
                 </MapContainer>
             </div>
          </div>
