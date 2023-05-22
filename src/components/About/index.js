@@ -26,15 +26,11 @@ const About = () => {
                         idx={15} //1.5 seconds delay
                     />
                 </h1>
-                <p>Mi-Ann is a certified ECBA Business Analyst, equipped with a solid understanding of industry-leading practices in business analysis. With an unwavering commitment to growth, she actively seeks opportunities to enhance her professional and technical competencies.</p>
+                <p>Mi-Ann is a certified ECBA Business Analyst, who has an understanding of best practices in business analysis. She is seeking to expand her professional and technical competencies.</p>
 
-                <p>During the challenging period of the pandemic and while awaiting her immigration approval status, Mi-Ann delved into programming and discovered a genuine passion for it. Engaging with fellow programmers in the industry, she actively cultivated her practical knowledge and gained invaluable insights into effective problem-solving approaches. Embracing the ever-evolving nature of technology, Mi-Ann consistently strives to provide a fresh perspective to each project she undertakes.</p>
-
-                <p>To augment her programming skills, Mi-Ann is actively pursuing additional online courses. Currently, she is engrossed in coursework covering HTML, CSS3, JavaScript, and Data Analysis in Python. Mi-Ann's unwavering dedication to continuous learning enables her to thrive in challenging environments and eagerly embrace constructive criticism. Her open-mindedness and relentless pursuit of excellence empower her to deliver exceptional, innovative solutions.</p>
+                <p>She became more interested in programming when the pandemic hit and whilst waiting for her immigration approval status. Engaging with other programmers in the industry enabled her to develop practical knowledge of how things are accomplished. Since the world is constantly evolving, she believes she can bring a fresh perspective to every project. Coding Bootcamp was the first step in getting structured training for her, and she is now taking other online courses to supplement her programming knowledge. She is currently continuing her education with coursework in HTML, CSS3, and Javascript. This makes her open to challenges and constructive criticism. She is open-minded and dedicates all her skills and talents to developing high-quality and unique products. </p>
             
-                <p>Beyond her professional pursuits, Mi-Ann is an ambivert with a profound appreciation for travel. Having explored various countries and lived in both New Zealand and the United States, she possesses a global mindset and deeply values diverse cultural experiences.</p>
-
-                <p>Mi-Ann's remarkable combination of business analysis expertise, programming acumen, and relentless commitment to growth make her an exceptionally promising candidate for any organization.</p>
+                <p>She is an ambivert who has an innate love of travel, having explored different countries and lived in both New Zealand and the United States.</p>
             </div>
             <div className="stage-cube-cont">
                 <div className="cubespinner">  
