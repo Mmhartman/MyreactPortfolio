@@ -74,7 +74,7 @@ nav {
        opacity: 0;
        transition: all 0.3s ease-out;  //for smooth transition 
     }
-// === HOME ===
+//   === HOME === //Text will appear when hover
     &:first-child {
         &:after {
             content: 'HOME';
@@ -82,18 +82,27 @@ nav {
      }
    }
 
-// === ABOUT ===
+// === ABOUT === Text will appear when hover
    a.about-link {
        &:after {
            content: 'ABOUT';
        }
    }
-// === CONTACT ===
+// === CONTACT === Text will appear when hover
    a.contact-link {
        &:after {
            content: 'CONTACT'
        }
    }
+// === PORTFOLIO === Text will appear when hover
+a.portfolio-link {
+    &:after {
+        content: 'PORTFOLIO'
+    }
+}
+
+
+
 // HOME ICON WITH WHITE COLOR
    a.active {
        svg {

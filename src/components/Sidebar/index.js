@@ -3,7 +3,7 @@ import './index.scss';
 import LogoM  from '../../assets/images/logo-M.png';
 import LogoSubtitle from '../../assets/images/logo_subM.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
@@ -31,6 +31,16 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
 
+            {/* === PORTFOLIO === */}
+            <NavLink exact="true" 
+                     activeclassname="active"
+                     className="portfolio-link" 
+                     to="/portfolio"
+            >
+                <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e"/>
+                
+            </NavLink>
+
             {/* === CONTACT === */}
             <NavLink exact="true" 
                      activeclassname="active"
@@ -40,6 +50,8 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
                 
             </NavLink>
+
+            
             
         </nav>
 
