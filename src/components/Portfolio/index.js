@@ -9,9 +9,36 @@ import portfolioData from "../../data/portfolio.json";
 const Portfolio = () => {
     // usage hook
     const [letterClass, setLetterClass] = useState('text-animate');
-
     console.log(portfolioData);
   
+    // TEXT HOVER 
+    useEffect(() => {
+        setTimeout(() => {
+         setLetterClass('text-animate-hover')
+       }, 3000) // 3 seconds
+     }, [])
+
+     // image from  public / portfolio\1
+     const renderPortfolio = (portfolio) => {
+        return (
+            <div className="images-container">
+                {
+                    portfolio.map((port, idx) => {
+                        return ( 
+                            <div className="image-box" key={idx}>
+                                <img 
+                                src={port.cover}
+                                className="portfolio-image"
+                                alt="portfolio"
+                                />
+                            </div>
+                        )                               
+                })
+            }
+            </div>
+        );
+     }
+
     return ( 
             <>
             <div className="container portfolio-page">
@@ -23,7 +50,7 @@ const Portfolio = () => {
                             idx={15}  // idx index loading 1.5 seconds 
                         />
                     </h1>
-                    {/* <div>{renderPortfolio()}</div> */}
+                    <div>{renderPortfolio(portfolioData.portfolio)}</div>
                 </div>
             </div>
             <Loader type="pacman" />

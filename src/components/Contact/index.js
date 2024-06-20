@@ -12,7 +12,7 @@ const Contact = () => {
     // Reference from the FORM 
     const form = useRef()
 
-
+    // TEXT HOVER 
     useEffect(() => {   
         setTimeout(() => {
          setLetterClass('text-animate-hover')

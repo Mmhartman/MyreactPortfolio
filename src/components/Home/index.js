@@ -27,6 +27,7 @@ const Home = () => {
     //     return () => clearTimeout(timer);
     //   }, [])
    
+    // TEXT HOVER 
     useEffect(() => {
          setTimeout(() => {
           setLetterClass('text-animate-hover')

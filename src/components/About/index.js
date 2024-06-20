@@ -9,6 +9,7 @@ const About = () => {
     
     const [letterClass, setLetterClass] = useState('text-animate')
     
+    // TEXT HOVER 
     useEffect(() => {
         setTimeout(() => {
          setLetterClass('text-animate-hover')

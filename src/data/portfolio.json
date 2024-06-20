@@ -2,10 +2,16 @@
 {
     "portfolio":[ 
         {
-            "cover": "/portfolio/1/sample1portfolio.png",
+            "cover": "/portfolio/1/AzureBadge.png",
             "title": "Sample Portfolio",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com" 
-        }    
+        },
+        {
+            "cover": "/portfolio/1/AzureBadge.png",
+            "title": "Sample Portfolio",
+            "description": "React, JSX, Tailwind, Jest",
+            "url": "http://google.com" 
+        }
     ]
 }
