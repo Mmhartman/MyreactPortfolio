@@ -11,14 +11,14 @@ const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     console.log(portfolioData);
   
-    // TEXT HOVER 
+    // == TEXT HOVER ==
     useEffect(() => {
         setTimeout(() => {
          setLetterClass('text-animate-hover')
        }, 3000) // 3 seconds
      }, [])
 
-     // image from  public / portfolio\1
+     // == image from  public / portfolio\1 ==
      const renderPortfolio = (portfolio) => {
         return (
             <div className="images-container">
@@ -27,10 +27,21 @@ const Portfolio = () => {
                         return ( 
                             <div className="image-box" key={idx}>
                                 <img 
-                                src={port.cover}
-                                className="portfolio-image"
-                                alt="portfolio"
+                                    src={port.cover}
+                                    className="portfolio-image"
+                                    alt="portfolio"
                                 />
+                                    <div className="content">
+                                        <p className="title">{port.title}</p>
+                                        <h4 className="description">{port.description}</h4>
+                                        <button
+                                            className="btn"
+                                            onClick={() => window.open(port.url)}
+                                        >View
+                                        </button>
+
+                                    </div>
+                                
                             </div>
                         )                               
                 })
