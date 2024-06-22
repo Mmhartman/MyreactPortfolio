@@ -3,17 +3,26 @@ import './index.scss';
 import LogoM  from '../../assets/images/logo-M.png';
 import LogoSubtitle from '../../assets/images/logo_subM.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faHome, faSuitcase, faUser,faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
 
-const Sidebar = () => (
+const Sidebar = () => {
+
+    // == MOBILE RESPONSIVE == 
+    const [showNav,setShowNav] = useState(false);// when you load the page, the navigation is going to be hidden.
+
+
+    return (
     <div className="nav-bar">
         {/* Default HOME PAGE */}
         <Link className="logo" to="/">
             <img src={LogoM} alt="logo" />
             <img className="sub-logo" src={LogoSubtitle} alt="MiAnn" />
         </Link>
-        <nav>
+
+       
+        <nav className= {showNav ? 'mobile-show' : ''}>  {/* classname for mobile responsive */}
             {/* === HOME === */}
             <NavLink exact="true"
                      activeclassname="active" 
@@ -51,6 +60,15 @@ const Sidebar = () => (
                 
             </NavLink>
 
+            {/* ==== MOBILE, HAMBURGER ON CLICK == */}
+            <FontAwesomeIcon
+                onClick={() => setShowNav(false)}
+                icon={faClose}
+                color="d5d5d5"
+                size="3x"
+                className='close-icon'
+
+            />
             
             
         </nav>
@@ -77,8 +95,17 @@ const Sidebar = () => (
             </li>
         </ul>
 
+        {/* MOBILE RESPONSIVE == HAMBURGER MENU */}
+        <FontAwesomeIcon 
+          onClick={() => setShowNav(true)}
+          icon={faBars}
+          color="#4d4d4e"
+          size="3x"
+          className='close-icon' />
+
     </div>
 
-    )
+   );
+};
 
-export default Sidebar
+export default Sidebar;
