@@ -118,3 +118,26 @@
     }
 
 }
+
+// == MOBILE RESPONSIVE == //
+
+@media screen and (max-width: 1200px) {
+    .container.portfolio-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing:border-box; // no horizontal scroll bar
+
+
+        h1.page-title {
+           margin-left: 20px;
+           margin-top: 20px; 
+        }
+
+        .image-box {
+            height: 200px;
+            max-width: calc(50% - 10px);
+        }
+
+    }
+
+}
