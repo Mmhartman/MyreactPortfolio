@@ -24,7 +24,8 @@ const Sidebar = () => {
        
         <nav className= {showNav ? 'mobile-show' : ''}>  {/* classname for mobile responsive */}
             {/* === HOME === */}
-            <NavLink exact="true"
+            <NavLink onClick={() => setShowNav(false)} // MOBILE
+                     exact="true"
                      activeclassname="active" 
                      to="/"
             >
@@ -32,7 +33,8 @@ const Sidebar = () => {
             </NavLink>
 
             {/* === ABOUT === */}
-            <NavLink exact="true"
+            <NavLink onClick={() => setShowNav(false)} // MOBILE
+                     exact="true"
                      activeclassname="active"
                      className="about-link"
                      to="/about"
@@ -41,7 +43,8 @@ const Sidebar = () => {
             </NavLink>
 
             {/* === PORTFOLIO === */}
-            <NavLink exact="true" 
+            <NavLink onClick={() => setShowNav(false)} // MOBILE
+                     exact="true" 
                      activeclassname="active"
                      className="portfolio-link" 
                      to="/portfolio"
@@ -51,7 +54,9 @@ const Sidebar = () => {
             </NavLink>
 
             {/* === CONTACT === */}
-            <NavLink exact="true" 
+            <NavLink 
+                     onClick={() => setShowNav(false)} // MOBILE
+                     exact="true" 
                      activeclassname="active"
                      className="contact-link" 
                      to="/contact"
@@ -60,11 +65,11 @@ const Sidebar = () => {
                 
             </NavLink>
 
-            {/* ==== MOBILE, HAMBURGER ON CLICK == */}
+            {/* ==== MOBILE, HAMBURGER ON CLICK X button == */}
             <FontAwesomeIcon
                 onClick={() => setShowNav(false)}
                 icon={faClose}
-                color="d5d5d5"
+                color="#ffffff"
                 size="3x"
                 className='close-icon'
 
@@ -99,7 +104,7 @@ const Sidebar = () => {
         <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
           icon={faBars}
-          color="#4d4d4e"
+          color="#ffffff"
           size="3x"
           className='close-icon' />
 

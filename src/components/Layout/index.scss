@@ -124,3 +124,33 @@
         }
     }
 }
+
+// === MOBILE RESPONSIVE ==//
+@media screen and (max-width: 1200px) {
+    
+    
+    .page { // every single page 
+        position: initial; 
+    }
+
+    .container { // this will fix a lot of bugs, it will apply to all pages
+        position: initial;
+        height: auto;
+        min-height: auto;
+
+
+        &.contact-page,
+        &.about-page,
+        &.portfolio-page {
+          .text-zone {
+            position: initial;
+            transform: none;
+            width: 100%;
+            display: block;
+            padding: 20px;
+            box-sizing: border-box;
+          }
+    }
+
+   }
+}
