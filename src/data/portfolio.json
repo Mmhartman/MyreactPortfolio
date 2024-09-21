@@ -3,15 +3,21 @@
     "portfolio":[ 
         {
             "cover": "/portfolio/1/AzureBadge.png",
-            "title": "Sample Portfolio",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com" 
+            "title": "Microsoft Certified:Azure Fundamentals",
+            "description": "Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure",
+            "url": "https://www.credly.com/badges/07d51b5c-1e6e-4764-b5e0-fa0fc1a74bfd/public_url" 
         },
         {
-            "cover": "/portfolio/1/AzureBadge.png",
-            "title": "Sample Portfolio",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com" 
+            "cover": "/portfolio/2/aws-certified-cloud-practitioner.png",
+            "title": "AWS Certified Cloud Practitioner",
+            "description": "This certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. ",
+            "url": "https://www.credly.com/badges/17cb0c9b-3148-4a46-965f-d4dba7947c55/public_url" 
+        },
+        {
+            "cover": "/portfolio/3/ibm-data-science-professional-certificate.png",
+            "title": "IBM Data Science Professional Certificate",
+            "description": "The badge earner is ready for a data science career, skilled in solving real-world problems using Jupyter notebooks, Python apps, SQL, and Pandas. They can build machine learning models with Scikit-learn, apply data science techniques, and analyze real-world datasets ",
+            "url": "https://www.credly.com/badges/95072ec3-66fc-4ba6-be43-1197069215d5/public_url" 
         }
     ]
 }
